@@ -1,7 +1,7 @@
 # Личный проект «Пиксель хантер» [![Build status][travis-image]][travis-url]
 
 * Студент: [Артем Баулин](https://up.htmlacademy.ru/ecmascript/7/user/807821).
-* Наставник: `Неизвестно`.
+* Наставник: [Даниил Оношко](https://htmlacademy.ru/profile/id154426).
 
 ---
 
