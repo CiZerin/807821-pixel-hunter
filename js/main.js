@@ -8,3 +8,5 @@ const showContent = (tempNum) => {
   main.innerHTML = '';
   main.appendChild(clon);
 }
+
+showContent(1);
