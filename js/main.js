@@ -50,3 +50,10 @@ const arrowRight = document.createElement(`button`);
 arrowRight.classList.add(`arrows__btn`);
 arrowRight.innerHTML = `->`;
 arrows.appendChild(arrowRight);
+
+arrowLeft.addEventListener(`click`, () => {
+  showContent(active-1);
+})
+arrowRight.addEventListener(`click`, () => {
+  showContent(active+1);
+})
