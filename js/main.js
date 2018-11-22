@@ -6,9 +6,9 @@ let active;
 // Выводит контент шаблона на экран
 const showContent = (tempNum) => {
   const temp = templates[tempNum];
-  const clon = temp.content.cloneNode(true);
+  const clone = temp.content.cloneNode(true);
   main.innerHTML = ``;
-  main.appendChild(clon);
+  main.appendChild(clone);
   active = tempNum;
 };
 
@@ -20,7 +20,7 @@ const keyNum = {
   LEFT: 37,
   RIGHT: 39
 };
-document.addEventListener(`keydown`, (evt) => {
+const pressKey = document.addEventListener(`keydown`, (evt) => {
   if (evt.keyCode === keyNum.LEFT) { // ArrowLeft
     showContent(active - 1);
   } else if (evt.keyCode === keyNum.RIGHT) { // ArrowRight
