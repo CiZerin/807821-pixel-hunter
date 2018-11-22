@@ -21,9 +21,9 @@ const KeyNum = {
   RIGHT: 39
 };
 document.addEventListener(`keydown`, (evt) => {
-  if (evt.keyCode === keyNum.LEFT) { // ArrowLeft
+  if (evt.keyCode === KeyNum.LEFT) { // ArrowLeft
     showContent(active - 1);
-  } else if (evt.keyCode === keyNum.RIGHT) { // ArrowRight
+  } else if (evt.keyCode === KeyNum.RIGHT) { // ArrowRight
     showContent(active + 1);
   }
 });
