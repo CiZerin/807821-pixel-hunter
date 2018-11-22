@@ -16,10 +16,14 @@ const showContent = (tempNum) => {
 showContent(1);
 
 // Листание экранов кнопками
+const keyNum = {
+  LEFT: 37,
+  RIGHT: 39
+};
 document.addEventListener(`keydown`, (evt) => {
-  if (evt.keyCode === 37) { // ArrowLeft
+  if (evt.keyCode === keyNum.LEFT) { // ArrowLeft
     showContent(active - 1);
-  } else if (evt.keyCode === 39) { // ArrowRight
+  } else if (evt.keyCode === keyNum.RIGHT) { // ArrowRight
     showContent(active + 1);
   }
 });
